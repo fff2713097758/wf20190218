@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>949</width>
+    <height>606</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="windowIcon">
+   <iconset resource="res.qrc">
+    <normaloff>:/icon/whpm.png</normaloff>:/icon/whpm.png</iconset>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <property name="sizePolicy">
+    <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+     <horstretch>0</horstretch>
+     <verstretch>0</verstretch>
+    </sizepolicy>
+   </property>
+   <property name="autoFillBackground">
+    <bool>false</bool>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="30,1">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>9</number>
+    </property>
+    <item>
+     <widget class="QWidget" name="widget" native="true">
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/icon/tk.png</normaloff>:/icon/tk.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_2">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/icon/tf.png</normaloff>:/icon/tf.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_3">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/icon/tj.png</normaloff>:/icon/tj.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="pushButton_4">
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset resource="res.qrc">
+          <normaloff>:/icon/te.png</normaloff>:/icon/te.png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>32</width>
+          <height>32</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <property name="iconSize">
+    <size>
+     <width>64</width>
+     <height>64</height>
+    </size>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionMain"/>
+   <addaction name="actionReport"/>
+   <addaction name="actionQuery"/>
+   <addaction name="separator"/>
+   <addaction name="actionCheck"/>
+   <addaction name="separator"/>
+   <addaction name="actionStart"/>
+   <addaction name="actionShutdown"/>
+  </widget>
+  <action name="actionReport">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/myreport.png</normaloff>:/icon/myreport.png</iconset>
+   </property>
+   <property name="text">
+    <string>检测结果</string>
+   </property>
+  </action>
+  <action name="actionQuery">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/myquery.png</normaloff>:/icon/myquery.png</iconset>
+   </property>
+   <property name="text">
+    <string>查询统计</string>
+   </property>
+  </action>
+  <action name="actionSop">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/book.png</normaloff>:/icon/book.png</iconset>
+   </property>
+   <property name="text">
+    <string>SOP</string>
+   </property>
+   <property name="toolTip">
+    <string>SOP</string>
+   </property>
+  </action>
+  <action name="actionDebug">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/debug.png</normaloff>:/icon/debug.png</iconset>
+   </property>
+   <property name="text">
+    <string>仪器调试</string>
+   </property>
+   <property name="toolTip">
+    <string>仪器调试</string>
+   </property>
+  </action>
+  <action name="actionClose">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/butclose.png</normaloff>:/icon/butclose.png</iconset>
+   </property>
+   <property name="text">
+    <string>关机</string>
+   </property>
+   <property name="toolTip">
+    <string>关闭仪器</string>
+   </property>
+  </action>
+  <action name="actionMinimize">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/butmin.png</normaloff>:/icon/butmin.png</iconset>
+   </property>
+   <property name="text">
+    <string>最小化</string>
+   </property>
+   <property name="toolTip">
+    <string>最小化窗口</string>
+   </property>
+  </action>
+  <action name="actionMain">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/whpm.png</normaloff>:/icon/whpm.png</iconset>
+   </property>
+   <property name="text">
+    <string>主界面</string>
+   </property>
+   <property name="toolTip">
+    <string>主界面</string>
+   </property>
+  </action>
+  <action name="actionStart">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/mystart.png</normaloff>:/icon/mystart.png</iconset>
+   </property>
+   <property name="text">
+    <string>启动仪器</string>
+   </property>
+   <property name="toolTip">
+    <string>启动仪器</string>
+   </property>
+  </action>
+  <action name="actionShutdown">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/mystop.png</normaloff>:/icon/mystop.png</iconset>
+   </property>
+   <property name="text">
+    <string>关机保养</string>
+   </property>
+   <property name="toolTip">
+    <string>关机保养</string>
+   </property>
+  </action>
+  <action name="actionSet">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/set.png</normaloff>:/icon/set.png</iconset>
+   </property>
+   <property name="text">
+    <string>参数设置</string>
+   </property>
+   <property name="toolTip">
+    <string>参数设置</string>
+   </property>
+  </action>
+  <action name="actionSickinput">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/sick.png</normaloff>:/icon/sick.png</iconset>
+   </property>
+   <property name="text">
+    <string>病人录入</string>
+   </property>
+   <property name="toolTip">
+    <string>病人录入</string>
+   </property>
+  </action>
+  <action name="actionCheck">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/icon/myselect.png</normaloff>:/icon/myselect.png</iconset>
+   </property>
+   <property name="text">
+    <string>检测项目录入</string>
+   </property>
+   <property name="toolTip">
+    <string>检测项目录入</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>
